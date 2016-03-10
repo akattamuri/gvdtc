@@ -22,6 +22,8 @@ const req = new vision.Request({
 vision.annotate(req).then((res) => {
   // handling response
 //console.log(res.responses[labelAnnotations])
+
+
    console.log(JSON.stringify(res.responses[labelAnnotations]))
    
 }, (e) => {
