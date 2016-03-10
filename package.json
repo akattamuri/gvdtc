@@ -1,0 +1,14 @@
+{
+  "name": "gvdtc",
+  "version": "1.0.0",
+  "description": "google vision for dtc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "node-cloud-vision-api": "^0.2.0"
+  }
+}
