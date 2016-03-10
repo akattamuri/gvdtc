@@ -8,13 +8,13 @@ const veh_title_url = 'https://storage.googleapis.com/ocr_storage/Veh_Title.JPG'
 
 var single = require('./singlereq');
 
-single(Dark_tire_url, function (){
+single(veh_title_url, function (){
     console.log("first image processed");
 });
-single(Brigh_tire_url, function (){
+/*single(Brigh_tire_url, function (){
     console.log("second image processed");
 });
 
-single(Brigh_tire_url, function (){
+single(veh_title_url, function (){
     console.log("third image processed");
-});
+});*/

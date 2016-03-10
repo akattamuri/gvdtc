@@ -14,15 +14,16 @@ const req = new vision.Request({
   }),
   features: [
     new vision.Feature('TEXT_DETECTION', 4),
-    new vision.Feature('LABEL_DETECTION', 10),
+    new vision.Feature('LABEL_DETECTION', 3),
   ]
 })
  
 // send single request
 vision.annotate(req).then((res) => {
   // handling response
-  console.log(JSON.stringify(res.responses.labelAnnotations))
-  
+//console.log(res.responses[labelAnnotations])
+   console.log(JSON.stringify(res.responses[labelAnnotations]))
+   
 }, (e) => {
   console.log('Error: ', e)
 })
