@@ -23,8 +23,8 @@ vision.annotate(req).then((res) => {
   // handling response
 //console.log(res.responses[labelAnnotations])
 
-
-   console.log(JSON.stringify(res.responses[labelAnnotations]))
+        console.log(JSON.stringify(res.responses));
+   console.log(JSON.stringify(res.responses['textAnnotations']));
    
 }, (e) => {
   console.log('Error: ', e)
